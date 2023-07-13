@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #23242a;
+}
+
+.component .auth-form-container {
+  position: relative;
+  width: 380px;
+  height: 620px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.component .auth-form-container::before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, black, #45f3ff);
+  animation: animate 6s linear infinite;
+}
+
+.component .auth-form-container::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  transform-origin: bottom right;
+  background: linear-gradient(0deg, transparent, #45f3ff, white);
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.component form {
+  position: absolute;
+  inset: 2px;
+  background: #28292d;
+  padding: 50px 40px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.component .auth-form-container h2 {
+  color: #45f3ff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.component .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+  color: white;
+  border-bottom: 2px solid #45f3ff;
+}
+
+.component .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.component .inputBox input:hover {
+  transform: translateY(-3px);
+  transition: 0.5s ease;
+}
+
+.component .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.component .inputBox input:valid ~ span,
+.component .inputBox input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}
+
+.component .info-icon {
+  position: absolute;
+  left: 85px;
+  bottom: 5px;
+  top: 5px;
+  font-size: 1em;
+  color: #8f8f8f;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.component .info-icon:hover{
+  display: block;
+}
+
+.component .info-icon1 {
+  position: absolute;
+  left: 120px;
+  bottom: 5px;
+  top: 5px;
+  font-size: 1em;
+  color: #8f8f8f;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+.component .password-tooltip {
+  display: block;
+  opacity: 0.9;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #45f3ff;
+  background-color: #1c1c1c;;
+  border: 2px solid #ff9100;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.component .link-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.component .link-btn {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: beige;
+  bottom: 40px;
+  position: absolute;
+}
+
+.component .link-btn:hover,
+.component .link-btn:nth-child(2) {
+  color: #45f3ff;
+  transform: translateY(-3px);
+  transition: 0.5s ease;
+}
+
+.component .link-btn1 
+{
+  display: flex;
+  justify-content: space-between;
+}
+.component .link-btn1 
+{
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: beige;
+  position: absolute;
+  bottom: 70px;
+}
+
+.component .link-btn1:hover, 
+.component .link-btn1:nth-child(2)
+{
+  color: #45f3ff;
+  transform: translateY(-3px);
+  transition: 0.5s ease;
+}
+
+.component .link-btn2
+{
+  display: flex;
+  justify-content: space-between;
+}
+.component .link-btn2
+{
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: #8f8f8f;
+  text-decoration: beige;
+  position: absolute;
+  bottom: 10px;
+}
+
+.component .link-btn2:hover, 
+.component .link-btn2:nth-child(2)
+{
+  color: #45f3ff;
+  transform: translateY(-3px);
+  transition: 0.5s ease;
+}
+
+.component .link-btn3{
+  border: none;
+  outline: none;
+  padding: 11px 25px;
+  background: #45f3ff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 130px;
+  margin-top: 10px; 
+  position: absolute;
+  bottom: 280px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.component .link-btn3:hover{
+  background: black;
+  color: #45f3ff;
+  transform: translateY(3px);
+  transition: 0.5s ease;
+}
+.component .link-btn3:active{
+  opacity: 0.8;
+}
+
+
+.component .btn[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 11px 25px;
+  background: #45f3ff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 130px;
+  margin-top: 10px;
+}
+
+.component .btn:hover {
+  background: black;
+  color: #45f3ff;
+  transform: translateY(3px);
+  transition: 0.5s ease;
+}
+
+.component .btn[type="submit"]:active {
+  opacity: 0.8;
+}
+
+.component .error {
+  color: #e3473f;
+  border-top: 2px solid black;
+  padding: 20px;
+  margin-bottom: 8px;
+  z-index: 100;
+}
+
+.component .forgot-password-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.component .forgot-password-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.component .input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.component .submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.component .message {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.component .google-signin-container {
+  position: absolute;
+  left: 40px;
+  bottom: 190px;
+}
+
+.component .btnF[type="submit"]
+{
+  border: none;
+  outline: none;
+  padding: 11px 25px;
+  background: #45f3ff;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.component .btnF:hover{
+   background: black;
+   color: #45f3ff;
+   transform: translateY(3px);
+  transition: 0.5s ease;
+}
+
+.component .btnF[type="submit"]:active 
+{
+ opacity: 0.8;
+}
+
+.component .reCaptcha{
+  padding-top: 10px;
+}
+
+.component .popup-timer {
+    font-size: 12px;
+    color: #888;
+} 
+
+.component .homepage{
+  color: white;
+}
