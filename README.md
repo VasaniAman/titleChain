@@ -35,6 +35,12 @@ titleChain is a title deed storing system that help authenticate and store your 
 Before you begin, ensure that you have the following on your system:
 - MySQL: Install and set up a MySQL server on your machine. You can download MySQL Community Server from the official MySQL website.
 
+- If not installed, follow the below sequence:
+  -Step 1: Update package lists: ```sudo apt update```
+  -Step 2: Install MySQL Server: ```sudo apt install mysql-server```
+  -Step 3: Step 3: Secure MySQL Installation: ```sudo mysql_secure_installation```
+  -Step 4: Step 4: Start MySQL Service: ```sudo systemctl start mysql```
+
 ### Step 1: Clone the Repository
 
 1. Open a terminal or command prompt.
@@ -50,7 +56,7 @@ Replace `https://github.com/VasaniAman/titleChain.git` with the URL of your proj
 1. Navigate to the project directory:
 
    
-This command will download and install all the required dependencies listed in the `package.json` file.
+This command will download and install all the required dependencies listed in the `package.json` file using ```npm install```
 
 ### Step 3: Configure the Database
 
@@ -60,8 +66,8 @@ This command will download and install all the required dependencies listed in t
 
 
 ### Step 4: Run the project
-1. Run an "npm run start" in the server.js file
-2. Run an "npm start" in the FrontEnd file.
+1. Run an ```npm run start``` in the server.js file
+2. Run an ```npm start``` in the FrontEnd file.
 
 ## Contributing
 
