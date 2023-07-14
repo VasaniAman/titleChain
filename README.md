@@ -78,7 +78,7 @@ This command will download and install all the required dependencies listed in t
 Contributions are welcome! If you'd like to contribute to titleChain, please follow these steps:
 
 1. make a fork request to the main project
-2. email us at: jsehmi246@gmail.com, auv2002@gmail.com
+2. email us at: jsehmi246@gmail.com, aman.vasani@strathmore.edu
 
 ## License
 
