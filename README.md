@@ -1,7 +1,6 @@
 # titleChain
 
-titleChain is a title deed storing system that help authenticate and store your title deeds. It is built with React.js, with a back end in mysql and aims to securely store your title deed in our system.
-
+titleChain is a document signature and storing system. The signatures are made by using your MetaMask wallet address. The system is built with React.js, with a back end in mysql and aims solve the issue of having to travel to simply sign a document.
 ## Table of Contents
 
 - [Features](#features)
